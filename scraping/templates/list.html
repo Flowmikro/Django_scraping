@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for job in jobs %}
+    {{job.title}}<br>
+    <a href="{{job.url}}">Перейти</a><br>
+    {{job.created_date}}<br>
+{% endfor %}
+</body>
+</html>
